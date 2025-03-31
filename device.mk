@@ -356,3 +356,15 @@ PRODUCT_COPY_FILES += \
 
 # Inherit the proprietary files
 $(call inherit-product, vendor/xiaomi/sea/sea-vendor.mk)
+PRODUCT_PACKAGES += \
+    firmware_wlan_mac.bin_symlink \
+    firmware_WCNSS_qcom_cfg.ini_symlink
+
+# WiFi Display
+PRODUCT_PACKAGES += \
+    libnl \
+    libpng.vendor \
+    libwfdaac_vendor
+
+# Disable Matlog
+TARGET_DISABLE_MATLOG := true
