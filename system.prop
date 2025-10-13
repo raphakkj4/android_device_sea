@@ -19,3 +19,8 @@ log.tag=I
 
 # SurfaceFlinger
 ro.sf.blurs_are_expensive=1
+
+# Radio
+DEVICE_PROVISIONED=1
+persist.sys.radio.force_lte_ca=true
+ril.subscription.types=NV,RUIM
