@@ -5,7 +5,7 @@
 #
 
 DEVICE_PATH := device/xiaomi/sea
-KERNEL_PATH := device/xiaomi/sea-prebuilt
+KERNEL_PATH := device/xiaomi/sea-kernel
 
 # Enable 64-bit for non-zygote.
 ZYGOTE_FORCE_64 := true
