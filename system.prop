@@ -1,3 +1,7 @@
+# Deep Sleep
+pm.sleep_mode=1
+vendor.post_boot.parsed=1s
+
 # IMS
 persist.dbg.volte_avail_ovr=1
 persist.dbg.vt_avail_ovr=1
