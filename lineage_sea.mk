@@ -14,6 +14,12 @@ $(call inherit-product, device/xiaomi/sea/device.mk)
 # Inherit some common LineageOS stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+# Prebuilt kernel
+PREBUILT_KERNEL := false
+
+# Gapps
+WITH_GMS := false
+
 PRODUCT_NAME := lineage_sea
 PRODUCT_DEVICE := sea
 PRODUCT_MANUFACTURER := Xiaomi
