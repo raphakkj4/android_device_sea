@@ -105,6 +105,12 @@ persist.vendor.mtk.volte.enable=1
 persist.vendor.viwifi_support=1
 ro.vendor.md_auto_setup_ims=1
 ro.vendor.mtk_data_config=1
+persist.vendor.radio.adb_log_on=0
+persist.vendor.radio.aplog_mask=0
+persist.vendor.radio.snapshot_enabled=0
+persist.vendor.radio.snapshot_timer=0
+persist.vendor.sys.modem.diag=0
+persist.vendor.ssr.enable_ramdumps=0
 
 # Kernel module loading
 ro.vendor.fm.platform=mt6631_6635
