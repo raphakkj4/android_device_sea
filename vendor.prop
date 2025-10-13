@@ -111,6 +111,8 @@ persist.vendor.radio.snapshot_enabled=0
 persist.vendor.radio.snapshot_timer=0
 persist.vendor.sys.modem.diag=0
 persist.vendor.ssr.enable_ramdumps=0
+persist.vendor.qcomsysd.enabled=false
+persist.vendor.perf.enable_logger=false
 
 # Kernel module loading
 ro.vendor.fm.platform=mt6631_6635
