@@ -38,6 +38,13 @@ lib_fixups: lib_fixups_user_type = {
 }
 
 blob_fixups: blob_fixups_user_type = {
+    'system_ext/lib64/libimsma.so': blob_fixup()
+        .replace_needed('libsink.so', 'libsink-mtk.so'),
+    'system_ext/lib64/libsink-mtk.so': blob_fixup()
+        .fix_soname()
+    "vendor/etc/init/android.hardware.media.c2@1.2-mediatek.rc": blob_fixup().regex_replace(
+        "@1.2-mediatek", "@1.2-mediatek-64b"
+    ),
     'vendor/bin/hw/android.hardware.media.c2@1.2-mediatek-64b': blob_fixup()
         .add_needed('libstagefright_foundation-v33.so')
         .replace_needed('libavservices_minijail_vendor.so', 'libavservices_minijail.so'),

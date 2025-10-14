@@ -180,6 +180,10 @@ PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0-impl \
     android.hardware.gatekeeper@1.0-service
 
+# IMS
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/permissions/privapp-permissions-com.mediatek.ims.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-com.mediatek.ims.xml
+
 # GNSS
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.location.gps.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.location.gps.xml
@@ -250,7 +254,8 @@ PRODUCT_COPY_FILES += \
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
 PRODUCT_PACKAGES += \
-    FrameworkOverlaySea \
+    TelephonyOverlaySea \
+    FrameworksResOverlaySea \
     TetheringConfigOverlay \
     SettingsOverlaySea \
     SystemUIOverlaySea \
