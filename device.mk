@@ -66,6 +66,9 @@ TARGET_SCREEN_WIDTH := 1080
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 PRODUCT_BUILD_SUPER_PARTITION := false
 
+PRODUCT_PACKAGES += \
+    libutils-v32
+
 # Sku properties
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/sku/,$(TARGET_COPY_OUT_ODM)/etc)
